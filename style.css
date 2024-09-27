@@ -1,0 +1,116 @@
+html {
+  background-color: darkslategray;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a:link,
+a:visited {
+  color: darkslategray;
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  color: slategray;
+  text-decoration: none;
+}
+
+.profile {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: ghostwhite;
+  padding: 10px;
+  gap: 10px;
+
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.5rem;
+    color: gainsboro;
+  }
+
+  .avatar {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    overflow: hidden;
+    border-radius: 50%;
+    border: solid 3px slategray;
+    padding: 5px;
+    background-color: lightblue;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    padding: 10px;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
+}
+
+.main {
+  padding: 60px;
+  margin: 0;
+  flex: 2;
+  background-color: ghostwhite;
+  min-height: fit-content;
+  height: 100vh;
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: 1.5rem;
+    color: slategray;
+    margin-bottom: 8px;
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1.12rem;
+    line-height: 1.6;
+  }
+  ul {
+    margin-left: 12px;
+    display: inline-block;
+    list-style: disc;
+    line-height: 1.6;
+  }
+  footer ul {
+    width: fit-content;
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 6px;
+    list-style-position: inside;
+  }
+}
